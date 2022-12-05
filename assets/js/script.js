@@ -1,7 +1,8 @@
 function displayNumber() {
-         
+    let num=Math.floor(Math.random()*25)+1;
+    document.getElementById('operand').textContent=num;
 }
-
+displayNumber();
 function incrementScore() {
 
 }
@@ -31,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 
     function runGame(gameType) {
-        let num=Math.floor(Math.random()*25)+1;
+        
         if (gameType === "even") {
             checkEvenAnswer(num);
         } else if (gameType === "odd") {
