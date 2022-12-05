@@ -54,4 +54,21 @@ game-area {
     font-size: 1rem;
     margin: auto;
     padding: 50px 0;
+    text-align: left;
+}
+
+.score-area {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+#score {
+    color: green;
+    font-weight: bold;
+}
+
+#incorrect {
+    color: red;
+    font-weight: bold;
 }
