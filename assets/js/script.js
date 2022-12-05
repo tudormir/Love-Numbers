@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
     }
-    function checkOddAnswer(num) {
-        let operand=parseInt(num);
+    function num_is_prime(num){
+        operand=parseInt(num);
         let num_prime=0;
         for (i=2; i<parseInt(operand/2); i++){
 
@@ -63,19 +63,29 @@ document.addEventListener("DOMContentLoaded", function() {
             num_prime++;
         } 
         }
-        if (operand%2!==0) {
-            if (num_prime===0) {
-            alert("The number is indeed odd but also prime");
-            incrementScore();
+        if (num_prime!==0) {
+            alert("The number is not prime");
+            return false;
         } else {
-            alert("The number is indeed odd but also prime");
+            alert("The number is indeed prime");
+            return true;
+        }
+    
+    }
+    function checkOddAnswer(num) {
+        let operand=parseInt(num);
+     
+        if (operand%2!==0)  {
+            alert("The number is indeed odd");
             incrementScore();
+        
         } else {
             alert("The number is not odd");
             incrementIncorrectAnswer();
         }
+
     }
-}
+
     function checkPrimeAnswer(num) {
             let operand=parseInt(num);
             let num_prime=0;
