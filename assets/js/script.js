@@ -1,5 +1,5 @@
 function displayNumber() {
-
+         
 }
 
 function incrementScore() {
@@ -17,22 +17,38 @@ document.addEventListener("DOMContentLoaded", function() {
 	for (let button of buttons) {
 		button.addEventListener("click", function() {
 			if (this.getAttribute("data-type") === "even") {
-				checkEvenAnswer();
-                runGame(even);
+				runGame("even")
 			} else if (this.getAttribute("data-type") === "odd") {
-				checkOddAnswer();
-                runGame(odd);
+                runGame("odd");
             } else if (this.getAttribute("data-type") === "prime") {
-				checkPrimeAnswer();
-                runGame(prime);
+                runGame("prime");
             } 
 		});
 	}
+    
 
-	document.getElementById("answer-box").addEventListener("keydown", function(event) {
-		if (event.key === "Enter") {
-			checkAnswer();
-		}
+	
 	});
 
-});
+    function runGame(gameType) {
+        let num=Math.floor(Math.random()*25)+1;
+        if (gameType === "even") {
+            checkEvenAnswer(num);
+        } else if (gameType === "odd") {
+            checkOddAnswer(num);
+        } else if (gameType === "prime") {
+            checkPrimeAnswer(num);
+        }
+    }
+
+    function checkEvenAnswer(num) {
+        let operand=parseInt(num);
+        if (operand%2===0) {
+            alert("The number is indeed even");
+            incrementScore();
+        } else {
+            alert("The number is not even");
+            incrementIncorrectAnswer();
+        }
+
+    }
