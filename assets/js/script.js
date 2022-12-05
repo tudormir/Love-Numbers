@@ -36,8 +36,10 @@ document.addEventListener("DOMContentLoaded", function() {
             displayNumber();
         } else if (gameType === "odd") {
             checkOddAnswer(num);
+            displayNumber();
         } else if (gameType === "prime") {
             checkPrimeAnswer(num);
+            displayNumber();
         }
     }
 
@@ -51,6 +53,45 @@ document.addEventListener("DOMContentLoaded", function() {
             incrementIncorrectAnswer();
         }
 
+    }
+    function checkOddAnswer(num) {
+        let operand=parseInt(num);
+        let num_prime=0;
+        for (i=2; i<parseInt(operand/2); i++){
+
+        if (operand%i===0) {
+            num_prime++;
+        } 
+        }
+        if (operand%2!==0) {
+            if (num_prime===0) {
+            alert("The number is indeed odd but also prime");
+            incrementScore();
+        } else {
+            alert("The number is indeed odd but also prime");
+            incrementScore();
+        } else {
+            alert("The number is not odd");
+            incrementIncorrectAnswer();
+        }
+    }
+}
+    function checkPrimeAnswer(num) {
+            let operand=parseInt(num);
+            let num_prime=0;
+            for (i=2; i<parseInt(operand/2); i++){
+
+            if (operand%i===0) {
+                num_prime++;
+            } 
+            }
+            if (num_prime!==0) {
+                alert("The number is not prime");
+                incrementIncorrectAnswer();
+            } else {
+                alert("The number is indeed prime");
+                incrementScore();
+            }
     }
     function incrementScore() {
 
