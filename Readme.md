@@ -30,6 +30,26 @@ The game works in the following fashion:
 - if the correct button has been pressed then the number of correct answers increases by 1, othewise the number of incorrect answers is increased by 1.
 
 
+You can see the Valide CSS! hier under.
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valide CSS!" />
+    </a>
+</p>
+            
+Valide CSS!
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valide CSS!" />
+    </a>
+</p>
+        
+
+
 
 
 
