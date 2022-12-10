@@ -54,6 +54,8 @@ Valide CSS!
 The lighthouse report for this webside is below:
 <img src="lighthouse_check.webp">
 
+The side is responsive on different devices.
+<img src="IsResponsive.webp">
 
 
 
