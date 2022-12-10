@@ -5,7 +5,7 @@ This is my first webside that uses javascript. I am quite proud of my first game
 
 In this game an positive integer number is tested whether the given number is even, odd of prime.
 
-I have ben inpired by the Love Maths game that I have seen during the course at Code Institute.
+I have been inpired by the Love Maths game that I have seen during the course at Code Institute.
 
 The game has the followings element:
    - head: hier I have added the language, title, fonds, link to the style.css file.
