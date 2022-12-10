@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     
     }
-    // The function checkEvenAnswer checks when the button "Odd" has been pushed if the number an ood number is.
+    // The function checkOddAnswer checks when the button "Odd" has been pushed if the number an ood number is.
     function checkOddAnswer(num) {
         let operand=parseInt(num);
      
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
     }
-// The function checkEvenAnswer checks when the button "Prime" has been pushed if the number a prime number is.
+// The function checkPrimeAnswer checks when the button "Prime" has been pushed if the number a prime number is.
     function checkPrimeAnswer(num) {
             let operand=parseInt(num);
             let num_prime=0;
