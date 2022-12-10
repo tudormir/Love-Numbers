@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	
 	});
-
+// The function runGame checks if the correct button has been chosen and displays another number.
     function runGame(gameType) {
         let num=parseInt(document.getElementById("operand").textContent);
         if (gameType === "even") {
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
             displayNumber();
         }
     }
-
+// The function checkEvenAnswer checks when the button "Even" has been pushed if the number an even number is.
     function checkEvenAnswer(num) {
         let operand=parseInt(num);
         if (operand%2===0) {
@@ -54,6 +54,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
     }
+    /**De functie num_is_prime checks is a number is prime. For example: the number 15 is divided by all the number from 2 until 15 divided by 2. 
+    *There is a local variable num_prime that increases if 15 is divided by 3 of 5. In that situationb is the answer
+    * of the division 0. Then if num_prime is not zero than the number 15 is not prime.*/
+
     function num_is_prime(num){
         operand=parseInt(num);
         let num_prime=0;
@@ -72,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     
     }
+    // The function checkEvenAnswer checks when the button "Odd" has been pushed if the number an ood number is.
     function checkOddAnswer(num) {
         let operand=parseInt(num);
      
@@ -85,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
     }
-
+// The function checkEvenAnswer checks when the button "Prime" has been pushed if the number a prime number is.
     function checkPrimeAnswer(num) {
             let operand=parseInt(num);
             let num_prime=0;
@@ -103,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 incrementScore();
             }
     }
+  
     function incrementScore() {
 
         // Gets the current score from the DOM and increments it
@@ -111,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("score").innerText = ++oldScore;
     
     }
-    
+ 
     function incrementIncorrectAnswer() {
     
         // Gets the current tally of incorrect answers from the DOM and increments it

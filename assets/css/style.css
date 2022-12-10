@@ -21,6 +21,8 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.2px;
     color: rgb(26, 11, 11);
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
 }
 
 game-area {
@@ -43,11 +45,12 @@ game-area {
     width: 50%;
     font-size: 2rem;
     margin: auto;
-    padding: 50px 0;
+    padding: 15px 0;
 }
 
 .question-area span {
     padding: 0 15px;
+
 }
 .explanation {
     width: 50%;
@@ -56,7 +59,19 @@ game-area {
     padding: 50px 0;
     text-align: left;
 }
-
+.instruction {
+    width: 80%;
+    font-size: 150%;
+    margin: 3px 3px 3px 3px;
+    border: 2px 2px 2px 2px;
+    padding: 3px 3px 3px 30px;
+}
+#expl_game {
+    width:100%;
+    margin: 4px 4px 4px 4px;
+    padding: 3px 2px 2px 2px;
+    font-size: 120%;
+}
 .score-area {
     margin: 5px auto;
     width: 60%;
