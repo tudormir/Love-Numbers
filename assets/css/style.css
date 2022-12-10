@@ -76,7 +76,11 @@ game-area {
     margin: 5px auto;
     width: 60%;
     font-size: 1.2rem;
+}
+.score-area p {
     display: inline-block;
+    margin: 5px 50px;
+    padding: 5px;
 }
 #score {
     color: green;
@@ -86,4 +90,16 @@ game-area {
 #incorrect {
     color: red;
     font-weight: bold;
+    display: inline-block;
+}
+@media screen and (max-device-width:640px), screen and (max-width:640px) {
+    .game-area {
+        height: 40vh;
+    }
+    .heading {
+        font-size: 2rem;
+    }
+    .score-area p{
+
+    }
 }
