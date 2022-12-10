@@ -48,6 +48,14 @@ Valide CSS!
     </a>
 </p>
         
+The lighthouse report for this webside is below:
+<img src="lighthouse_check.wegb">
+
+
+
+
+
+
 
 
 
