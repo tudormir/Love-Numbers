@@ -29,6 +29,9 @@ The game works in the following fashion:
 - then another number is showned.  
 - if the correct button has been pressed then the number of correct answers increases by 1, othewise the number of incorrect answers is increased by 1.
 
+There is a html checker loaded as image:
+<img src="html_checker.webp">
+ 
 
 You can see the Valide CSS! hier under.
 <p>
@@ -50,6 +53,7 @@ Valide CSS!
         
 The lighthouse report for this webside is below:
 <img src="lighthouse_check.webp">
+
 
 
 
