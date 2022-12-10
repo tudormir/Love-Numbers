@@ -30,9 +30,9 @@ game-area {
     background-color: #E6ECF0;
     box-sizing: border-box;
     width: 85%;
-    height: 65vh;
-    max-height: 450px;
-    max-width: 830px;
+    height: 45vh;
+    max-height: 250px;
+    max-width: 430px;
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
@@ -74,18 +74,20 @@ game-area {
     font-size: 120%;
 }
 .score-area {
-    margin: 5px auto;
+    width: 100%;
+    margin: auto;
     width: 60%;
     font-size: 1.2rem;
 }
 .score-area p {
-    display: inline-block;
-    margin: 5px 50px;
+    display:inline-block;
+    margin: 5px 30px;
     padding: 5px;
 }
 #score {
     color: green;
     font-weight: bold;
+    display:inline-block;
 }
 
 #incorrect {
@@ -101,6 +103,6 @@ game-area {
         font-size: 2rem;
     }
     .score-area p{
-
+         
     }
 }
